@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <title> ventas </title>
+            <link rel="shortcut icon" href="tortillas.png" type="image/x-icon">
+            <link rel="stylesheet" href="estilos.css" />
+          </head>
+
+        <body>
+            
+        <div class="papa"> 
+        <table><h3> <img src="1.png" alt="Esta es una descripcion 
+              alternativa de la imagen para cuando no se pueda mostrar" 
+              width="200px" height="40px" /></h3>
+        <tr> 
+            <label>EN CUENTA: 💸</label> <input type="number" id="resultado" class="resultado" disabled><br><br> 
+        </tr>
+        </table>
+        <table class="default" border="px">
+
+            
+          <tr>          
+            <th class="envio">ENVIO</th>
+        
+            <th class="envio"></th>
+        
+          </tr>
+          <tr>
+          
+            <td class="label"><label >Marque "1" si desea envío <br> de lo contrario deje vacío </label> </td>
+        
+            <td> <input type="number" id="valorSi" oninput="sumar()"> </td>
+        
+          </tr>
+            <tr>
+          
+              <th class="envio">PUPUSAS</th>
+          
+              <th class="envio">CANTIDAD</th>
+          
+            </tr>
+          
+            <tr>
+          
+              <td class="label"><label> Frijol Queso </label> </td>
+          
+              <td> <input type="number" id="valorFQ" oninput="sumar()"> </td>
+          
+            </tr>
+          
+            <tr>
+          
+              <td class="label"><label>Revueltas </label></td>
+          
+              <td><input type="number" id="valorR" oninput="sumar()"></td>
+          
+            </tr>
+          
+            <tr>
+          
+              <th class="envio">PUPUSAS DE<BR> ESPECIALIDAD</th>
+          
+              <th class="envio">CANTIDAD</th>
+          
+            </tr>
+            <tr>
+          
+                <td class="label"><label>Queso  </label> </td>
+            
+                <td> <input type="number" id="valorQ" oninput="sumar()"> </td>
+            
+              </tr>
+            
+              <tr>
+            
+                <td class="label"><label> Queso con loroco </label></td>
+            
+                <td><input type="number" id="valorQL" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+          
+                <td class="label"><label>Queso con ayote </label> </td>
+            
+                <td> <input type="number" id="valorAY" oninput="sumar()"> </td>
+            
+              </tr>
+            
+              <tr>
+            
+                <td class="label"><label> Mora  </label></td>
+            
+                <td><input type="number" id="valorMOR" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+          
+                <td class="label"><label>Chipilin</label> </td>
+            
+                <td> <input type="number" id="valorCHI" oninput="sumar()"> </td>
+            
+              </tr>
+            
+              <tr>
+            
+                <td class="label"><label> Ajo </label></td>
+            
+                <td><input type="number" id="valorAJO" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+            
+                <td class="label"><label> Jalapeño </label></td>
+            
+                <td><input type="number" id="valorJALA" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+            
+                <td class="label"><label> Chicharrón con queso </label></td>
+            
+                <td><input type="number" id="valorChiQ" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+          
+                <th class="envio">EMPANADAS</th>
+            
+                <th class="envio">CANTIDAD</th>
+            
+              </tr>
+              <tr>
+            
+                <td class="label"><label> Leche </label></td>
+            
+                <td><input type="number" id="valorLE" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+            
+                <td class="label"><label> Frijol </label></td>
+            
+                <td><input type="number" id="valorFRIJOL" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+          
+                <th class="envio">BEBIDAS</th>
+            
+                <th class="envio">CANTIDAD</th>
+            
+              </tr>
+              <tr>
+            
+                <td class="label"><label> Café </label></td>
+            
+                <td><input type="number" id="valorCAFE" oninput="sumar()"></td>
+            
+              </tr>
+              
+              <tr>
+            
+                <td class="label"><label> Chocolate </label></td>
+            
+                <td><input type="number" id="valorCHOCO" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+            
+                <td class="label"><label> Gaseosa </label></td>
+            
+                <td><input type="number" id="valorGAS" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+            
+                <td class="label"><label> Jugo del valle </label></td>
+            
+                <td><input type="number" id="valorValle" oninput="sumar()"></td>
+            
+              </tr>
+              <tr>
+            
+                <td class="label"><label> Jugo de lata </label></td>
+            
+                <td><input type="number" id="valorLata" oninput="sumar()"></td>
+            
+              </tr>
+          
+          </table>
+
+        </div>
+           <!-- <input type="button" name="suma" value="calcular" onclick="sumar()">--> 
+        </body>
+            <script type="text/javascript">
+
+                function sumar () {
+
+
+
+                    var valorFQ     =  Number(document.getElementById('valorFQ').value); 
+                    var valorR      =  Number(document.getElementById('valorR').value);
+                    var valorQ      =  Number(document.getElementById('valorQ').value);
+                    var valorQL     =  Number(document.getElementById('valorQL').value);
+                    var valorAY     =  Number(document.getElementById('valorAY').value);
+                    var valorMOR    =  Number(document.getElementById('valorMOR').value);
+                    var valorCHI    =  Number(document.getElementById('valorCHI').value);
+                    var valorAJO    =  Number(document.getElementById('valorAJO').value);
+                    var valorJALA   =  Number(document.getElementById('valorJALA').value);
+                    var valorLE     =  Number(document.getElementById('valorLE').value);
+                    var valorFRIJOL =  Number(document.getElementById('valorFRIJOL').value);
+                    var valorCAFE   =  Number(document.getElementById('valorCAFE').value);
+                    var valorCHOCO  =  Number(document.getElementById('valorCHOCO').value);
+                    var valorGAS    =  Number(document.getElementById('valorGAS').value);
+                    var valorSi     =  Number(document.getElementById('valorSi').value);
+                    var valorChiQ   =  Number(document.getElementById('valorChiQ').value);
+                    var valorValle  =  Number(document.getElementById('valorValle').value);
+                    var valorLata   =  Number(document.getElementById('valorLata').value);
+
+                    
+
+                    var resultado = (valorSi * (0.50) +  valorFQ * (0.50) +  valorQ * (0.60) +  valorChiQ * (0.60) +  valorGAS * (0.70)
+                    +  valorCAFE *  (0.25) + valorValle * (0.65) + valorLata * (0.70) +  valorCHOCO * (0.25) + valorLE * (0.35)
+                    + valorFRIJOL * (0.35) + valorJALA * (0.60) + valorAJO * (0.60)
+                    + valorCHI * (0.60) + valorMOR * (0.60) + valorAY * (0.60) + valorQL * (0.60) 
+                    + valorR * (0.50)).toFixed(2); 
+
+                   
+                      document.getElementById('resultado').value = resultado;
+
+                    
+                    
+                    }
+ 
+            </script>      
+    </html>
