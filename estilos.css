@@ -30,11 +30,7 @@
 
 table {
     border-collapse: collapse;
-    border-color: #f78b0b;
-    background-image: url('2.jpg');
-    background-repeat: no-repeat;
-    background-attachment:scroll;
-    background-size: 100% 100%;
+    border-color: #565656;
     
   }
 input, label{
@@ -47,17 +43,19 @@ input{
     border: 1px solid;
 }
 .envio{
-    background-color:#d15226;
+    background-color:#f78b0b;
     border-collapse: collapse;
 }
 .label{
-    background-color: #f7dbbc;
+    background-color:  #f7dbbc;
+    
 }
 
 .resultado{
     font-size: 20 px;
-    color: #d15226;
-    background-color: #f7dbbc;
+    font-weight: bold;
+    color:black;
+    background-color: #d15226;
 }
 img{
 
