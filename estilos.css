@@ -54,8 +54,10 @@ input{
 .resultado{
     font-size: 20 px;
     font-weight: bold;
-    color:black;
+    color:white;
     background-color: #d15226;
+    padding: 5px;
+    padding-left: 10px;
 }
 img{
 
